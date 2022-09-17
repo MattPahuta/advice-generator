@@ -9,26 +9,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <main>
     <section id="advice-container" class="advice-container">
       <div class="advice-inner">
-        <h1 id="advice-id" class="advice-id">Advice #117</h1>
+        <h1 class="advice-id">Advice #<span id="advice-id">117</span></h1>
         <p id="advice-text" class="advice-text">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
-        <div class="quote-container">
+        <!-- <div class="divider-container">
+        </div> -->
 
-        </div>
-        <div class="icon-container">
-          <img src="./images/pattern-divider-mobile.svg" alt="">
-        </div>
-        <a class="advice-btn">Get Advice</a>
+        <picture class="">
+          <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+          <img class="divider" src="./images/pattern-divider-mobile.svg" alt="">
+        </picture> 
+        <!-- <img class="divider" src="./images/pattern-divider-mobile.svg" alt=""> -->
+        <a id="advice-btn" class="advice-btn">
+          <img class="dice-icon" src="./images/icon-dice.svg" alt="dice icon">
+        </a>
       </div>
     </section>
   </main>
